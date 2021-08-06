@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,8 +48,13 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding:0;
+    border: 1px solid black;
 }
 
+/* General Styles */
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -66,11 +70,25 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
+/*Page width Style */
+/* .container {
+    width: 100%;
+    margin: 0 auto;
+} */
+
+/*Header Styles */
+.headerbimg{
+    background-image: url("../img/jumbo.jpg");
+    width:90%;
+    height:30vh;
+    background-size:cover;
+    background-repeat: no-repeat;
     margin: 0 auto;
 }
 
+
+
+/* Top Styles */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +102,8 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/*Middle Content Styles */
 
 .middle-content {
     margin-bottom: 20px;
@@ -112,6 +132,7 @@ p {
     justify-content: center;
 }
 
+/* Bottom Styles */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,6 +147,7 @@ p {
     padding-right: 0;
 }
 
+/* Footer styles */
 footer {
     width: 100%;
     background: black;
