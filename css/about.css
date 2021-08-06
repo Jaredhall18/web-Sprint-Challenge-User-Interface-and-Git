@@ -51,32 +51,33 @@ table {
     max-width: 100%;
     margin: 0;
     padding:0;
-    border: 1px solid black;
 }
 
 /* General Styles */
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
+    font-weight: bold;
+    
+    
 }
- p, a, button{
-    font-weight: 550;
+ p, button{
+   font-size:18px;
+   font-weight:bold;
 }
 p {
     line-height: 1.4;
-    font-family: 'Rubik', sans-serif;
+    
     
 }
 
 a{
-    font-family: 'Rubik', sans-serif;
+    font-size:18px;
     color:black
 }
 
@@ -90,6 +91,7 @@ a{
 header nav{
     display: flex;
     justify-content:space-between;
+    padding:2% 0;
 }
 
 header nav .logo{
@@ -113,9 +115,9 @@ header nav a{
 }
 
 .headerbimg{
-    background-image: url("../img/jumbo.jpg");
+    background-image: url("../img/jumbo-about.png");
     width:100%;
-    height:25vh;
+    height:20vh;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,33 +125,53 @@ header nav a{
 }
 
 /* About Section Styles */
-
+.about{
+    width:95%;
+    margin:0 auto;
+}
 
 
 /* Content Block Styles */
 
 .contentblocks{
-display:flex;
-flex-wrap: wrap;
-
+    border-top:1px dashed black;
+    display:flex;
+    flex-wrap: wrap;
+    margin:2% 0;
+    padding:1% 0;
 }
 
 .contentblocks .content{
 width:45%;
 margin:20px auto;
-border-bottom: 1px dotted black;
+border-bottom: 1px dashed black;
+object-fit: fill;
+}
+
+.contentblocks .content h2{
+    padding-top:2%;
+}
+.contentblocks .content img{
+    width: 100%;
 }
 
 .contentblocks .content button{
     margin:20px 0;
-    padding:5px;
+    width: 30%;
+    padding:10px 20px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid black;
     font-family: 'Rubik', sans-serif;
+    font-size: 18px;
 }
 
 /* Let's work together Styles */
+.work-together{
+    width:95%;
+    margin:0 auto;
+    padding-bottom: 4%;
+}
 
 /* Footer styles */
 footer {
